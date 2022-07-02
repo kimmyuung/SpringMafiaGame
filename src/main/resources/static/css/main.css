@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("http://webneel.com/wallpaper/sites/default/files/images/07-2014/22-black-wallpaper.jpg");
+}
+h1 {
+  color: #700;
+  font-family: "Lobster";
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 100px;
+}
+h2 {
+  background: #100;
+  color: #700;
+  font-family: "lobster";
+  padding: 1px;
+  border-width: 0px;
+  margin-bottom: 25px;
+}
+h3.text-center {
+  font-family: "lobter";
+  color: red;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+p {
+  color: white;
+  margin: 25px;
+}
+figcaption {
+  color: white;
+}
+footer {
+  color: #888;
+  margin: 50px 0 0 10px;
+}
+.secondary {
+  color: #777;
+  position: center;
+  margin: 0 0 0 150px;
+}
+h4 {
+  color: #777;
+  margin: 0 105px 0 105px;
+}
+.link {
+  color: #555;
+  text-align: center;
+  padding: 25px;
+}
