@@ -1,16 +1,18 @@
-package mafia.dto;
+package mafia.vo;
 
 import lombok.*;
 
 @Getter
-@Setter
-@NoArgsConstructor@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @ToString
-public class MemberDto {
+public class MemberVo {
     private int MemberNo;
     private String Memberid;
     private String MemberPassWord;
     private String MemberName;
     private String MemberPhone;
     private String MemberEmail;
+    private Role role;
+
 }
