@@ -1,6 +1,8 @@
 package mafia.dto;
 
 import lombok.*;
+import mafia.vo.Role;
+
 
 @Getter
 @Setter
@@ -13,4 +15,5 @@ public class MemberDto {
     private String MemberName;
     private String MemberPhone;
     private String MemberEmail;
+    private Role role;
 }

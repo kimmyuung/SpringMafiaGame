@@ -6,6 +6,7 @@ import lombok.*;
 @NoArgsConstructor
 @Data
 @ToString
+@AllArgsConstructor
 public class MemberVo {
     private int MemberNo;
     private String Memberid;
