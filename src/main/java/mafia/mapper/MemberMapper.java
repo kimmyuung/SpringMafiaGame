@@ -6,7 +6,7 @@ import java.util.Map;
 
 public interface MemberMapper {
     String idcheck(String memberid);
-    String emailchekc(String email);
+    String emailchek(String email);
     boolean signup(MemberVo memberVo);
     Map<String,Object> findId(String memberName, String email);
     String findPassword(String memberId,String memberName);
