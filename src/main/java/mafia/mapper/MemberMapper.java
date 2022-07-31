@@ -1,9 +1,11 @@
 package mafia.mapper;
 
 import mafia.vo.MemberVo;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Map;
 
+@Mapper
 public interface MemberMapper {
     String idcheck(String memberid);
     String emailchek(String email);
