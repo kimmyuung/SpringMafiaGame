@@ -1,8 +1,10 @@
 package mafia.service;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import mafia.dto.MemberDto;
 import mafia.mapper.MemberMapper;
 import mafia.vo.MemberVo;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -75,6 +77,14 @@ public class MemberService implements UserDetailsService, OAuth2UserService {
         return null;
     }
 
+    public JSONObject  findIdSuccess(String findIdName){
+        JSONObject jo = new JSONObject();
+        String findId = findIdName.split(",")[0];
+        String findName = findIdName.split(",")[1];
+        jo.put("findId", findId);
+        jo.put("findName",findName);
+        return jo;
+    }
     public boolean findPassword(String mid, String memberName) {
         String find = memberMapper.findPassword(mid, memberName);
         if(find ==null) {return false;}
